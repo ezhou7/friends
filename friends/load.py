@@ -6,8 +6,8 @@ from friends.objects import *
 
 
 def load():
-    root_path = os.path.abspath(os.pardir)
-    src_dir = os.path.join(root_path, "json")
+    package_path = os.path.abspath(os.path.dirname(__file__))
+    src_dir = os.path.join(package_path, "json")
 
     seasons = []
     for filename in os.listdir(src_dir):
