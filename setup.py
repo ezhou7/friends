@@ -7,9 +7,7 @@ def setup_package():
         version="1.0.0",
         description="friends",
         packages=find_packages(),
-        package_data={
-            "friends": ["json/*"]
-        },
+        package_data={},
         include_package_data=True,
         install_requires=[]
     )
