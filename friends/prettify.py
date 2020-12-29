@@ -4,7 +4,8 @@ import os
 
 def prettify():
     root_path = os.path.abspath(os.pardir)
-    src_dir = os.path.join(root_path, "json")
+    package_path = os.path.abspath(os.path.dirname(__file__))
+    src_dir = os.path.join(package_path, "json")
     dest_dir = os.path.join(root_path, "prettified")
 
     if not os.path.exists(dest_dir):
